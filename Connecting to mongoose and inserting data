@@ -1,0 +1,11 @@
+STEP 1 :
+    Establishing a connection:     mongoose.connect(<URL STRING>)
+STEP 2:
+    Creating a Schema:     const ItemSchema = { name: String}
+STEP 3:
+    Creating Model:   const Item(should start with capital letter) = mongoose.model("Item"(should be sigular form), ItemSchema) 
+STEP 4:
+    Creating Item : const item1 = new Item({ name: "Adding new Item"})
+Step 5: 
+    Adding New Item: Item.insertOne(item1).then(()=>{console.log("item inserted Successfully")}).catch((err)=>{console.log(err));
+    
